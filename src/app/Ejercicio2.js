@@ -54,4 +54,5 @@ export default function Ejercicio2() {
         )}
       </div>
     );
+    
   }

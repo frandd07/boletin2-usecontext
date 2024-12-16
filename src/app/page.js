@@ -12,12 +12,15 @@ export default function Home() {
     <TemaProvider>
       <Ejercicio1 />
     </TemaProvider>
+
     <AuthProvider>
       <Ejercicio2/>
     </AuthProvider>
+
     <LanguageProvider>
       <Ejercicio3/>
     </LanguageProvider>
+    
     </div>
   );
 }
