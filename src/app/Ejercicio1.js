@@ -17,6 +17,7 @@ export function TemaProvider({ children }) {
   );
 }
 
+
 export default function Ejercicio1() {  
   const { tema, setTema } = useContext(TemaContext);
 
