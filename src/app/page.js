@@ -9,6 +9,7 @@ import Ejercicio4, {CartProvider} from './Ejercicio4';
 import Ejercicio5, {PermissionsProvider} from './Ejercicio5';
 import Ejercicio6 , {NotificationProvider} from './Ejercicio6';
 import Ejercicio7, {SettingsProvider} from './Ejercicio7';
+import Ejercicio8 from './Ejercicio8';
 
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
 
 
     <Ejercicio7/>
+    <Ejercicio8/>
   
     
 

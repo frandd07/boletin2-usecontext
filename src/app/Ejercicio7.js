@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const SettingsContext = createContext();
 
@@ -14,6 +14,11 @@ export function SettingsProvider({ children }) {
       [key]: value,
     }));
   };
+
+  useEffect(() => {
+    document.body.style.backgroundColor = settings.darkMode ? '#333' : '#fff';
+    document.body.style.color = settings.darkMode ? '#fff' : '#000';
+  }, [settings.darkMode]);
 
   return (
     <SettingsContext.Provider value={{ settings, updateSetting }}>
